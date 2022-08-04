@@ -22,6 +22,13 @@ $(document).ready(function(){
 		alert("${LogoutProcess}");	
 	}	  
 });
+<!-- 위시리스트 담기 실패 메세지  -->
+$(document).ready(function(){ 
+	if(${WishInsertFail != null}){
+		alert("${WishInsertFail}");	
+	}	  
+});
+
 
 </script>
 <!-- 메세지삭제 -->

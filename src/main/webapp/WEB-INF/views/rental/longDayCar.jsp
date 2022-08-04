@@ -73,7 +73,7 @@
         <section class="resume-section p-3 p-lg-5 d-flex  flex-column" id="portfolio"> 
             <div class="row my-auto">
                 <div class="col-12">
-                <h2 class="  text-center">Portfolio</h2>
+                <h2 class="  text-center">LongDay</h2>
                 <div class="mb-5 heading-border"></div>
                 </div>
                 <div class="col-md-12">
@@ -166,7 +166,7 @@
                                     </li>
                                 </ul>
                                 <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                                    <i class="fa-solid fa-car-side"></i> 렌트하기
+                                    <i class="fa-solid fa-car-side"></i> <a href="longDayRev.do">렌트하기</a>
                                 </button>
                                 <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
                                     <i class="fa fa-times"></i> Close

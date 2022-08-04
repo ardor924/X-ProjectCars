@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="kr.mr.mapper.WishMapper">
+  
+  <select id="wishList" resultType="WishDTO">
+  	<!-- SELECT * from wishList -->
+  	
+  	
+  	SELECT car.cName,car.price,car.company,car.fileName, wishList.wID 
+  	FROM car INNER JOIN wishList 
+  	ON car.cNum = wishList.cNum;
+
+  </select>
+  
+  <insert id="wishInsert" parameterType="WishDTO">
+     insert into wishList(cNum,id)
+     values(#{cNum},#{id})
+  </insert>
+
+  
+  
+  
+</mapper>
+  
+  

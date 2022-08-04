@@ -1,8 +1,12 @@
+<%@page import="kr.mr.model.VehicleDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="ctx" value="${pageContext.request.contextPath}"/> --%>
 <%@ include file="../inc/header.jsp" %>
+
+
+
 
 
 <!-- CSS -->
@@ -37,7 +41,7 @@
       
       <div class="column-xs-12 column-md-5">
         <h1>${vDto.company} ${vDto.cName}</h1>
-        <h2>${vDto.price}원</h2>
+        <h2>${vDto.price}만원</h2>
         <div class="description">
         <p>${vDto.contents}</p>
         <br/>
@@ -49,10 +53,14 @@
         <br/>
         <br/>
         <br/>
-        <br/>
-      </div>
-        <button class="add-to-cart">렌트카 예약하기</button>
-        <button class="add-to-cart">관심상품</button>
+        <br/>reservePage.do
+      	</div>
+        <button class="add-to-cart">
+        	<a href="reservePage.do?cNum=${vDto.cNum}&id=${sessionScope.userId}">
+        		렌트카 예약하기
+        	</a>
+        </button>
+        <button class="add-to-cart"><a href="wishList.do?cNum=${vDto.cNum}&id=${sessionScope.userId}">관심상품</button>
       </div>
     </div>
     <%-- </c:forEach> --%>
