@@ -496,6 +496,7 @@
                 var msg = '결제에 실패하였습니다.';
                 msg += '에러내용 : ' + rsp.error_msg;
                 alert(msg);
+                location.href = "payment.do";
               }
             
             });
@@ -668,7 +669,7 @@
 <!--     <div class="logo"></div> -->
     
     <header class="header">
-      <h2>Order summary</h2>
+      <h2>결제정보</h2>
     </header>
     <p class="microcopy">A summary of your total order.</p>
     

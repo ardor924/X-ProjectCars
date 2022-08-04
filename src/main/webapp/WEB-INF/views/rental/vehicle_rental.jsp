@@ -53,10 +53,10 @@
         <br/>
         <br/>
         <br/>
-        <br/>reservePage.do
+        <br/>
       	</div>
         <button class="add-to-cart">
-        	<a href="reservePage.do?cNum=${vDto.cNum}&id=${sessionScope.userId}">
+        	<a href="rentalSelector.do?cNum=${vDto.cNum}&id=${sessionScope.userId}">
         		렌트카 예약하기
         	</a>
         </button>

@@ -22,6 +22,18 @@ public class RentController {
 	private ReserveMapper reserveMapper;
 	   
 	   
+	@RequestMapping("/rentalSelector.do") 
+	public String rentalSelector(Model model, int cNum) {
+		
+		VehicleDTO vDto = vehicleMapper.vehicleGetter(cNum);
+		
+		model.addAttribute("vDto", vDto);
+		
+		return "rental/rental_selector"; 
+		
+	}  
+	
+	
 	   @RequestMapping("/oneDayCar.do") 
 	      public String DayCar(Model model) {
 	  
@@ -51,7 +63,7 @@ public class RentController {
 			
 			model.addAttribute("vDto", vDto);
 		   
-		   return "rental/paymentOk"; 
+		   return "payment/paymentOk"; 
 		   
 	   }  
 	   	   
